@@ -3,6 +3,7 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import MinMaxScaler
+# 표준화 = StandardScaler, 정규화 = MinMaxScaler 
 from sklearn.cluster import KMeans
 import numpy as np
 import matplotlib.pyplot as plt
@@ -73,7 +74,7 @@ def main():
             # 유저가 입력한 파일의 데이터 갯수를 세어서
             # 해당 데이터의 갯수가 10보다 작으면, 
             # 데이터의 갯수까지만 wcss 를 구하고, 10보다 크면 10개로
-            # 데이터 갯수는 인덱스
+            # 데이터 갯수는 인덱스!
             
             # X_new.shape[0] # 행만 세어줌 8
             if X_new.shape[0] < 10: # [0]데이터 억세스 기호 shape (8, 6) 출력 값은 튜플
